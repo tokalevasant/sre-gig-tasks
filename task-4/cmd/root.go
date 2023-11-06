@@ -28,7 +28,7 @@ Accepts following flags:
 	// has an action associated with it:
 	Run: func(cmd *cobra.Command, args []string) {
 		// noSuchFile := "cat: dfsdfdf: No such file or directory"
-
+		fmt.Printf("gocat called with args: %s, flag -n: %t, -b: %t\n",args,Number,NumberNonblank)
 
 	},
 	Args: cobra.MinimumNArgs(1),
