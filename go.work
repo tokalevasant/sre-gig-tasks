@@ -1,6 +1,7 @@
 go 1.20
 
 use (
+	./podwatcher
 	./task-1
 	./task-2
 	./task-3

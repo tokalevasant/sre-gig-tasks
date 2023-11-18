@@ -1,0 +1,12 @@
+apiVersion: sregig.redhat.com/v1alpha1
+kind: Podwatcher
+metadata:
+  labels:
+    app.kubernetes.io/name: podwatcher
+    app.kubernetes.io/instance: podwatcher-sample
+    app.kubernetes.io/part-of: podwatcher
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: podwatcher
+  name: podwatcher-sample
+spec:
+  # TODO(user): Add fields here
