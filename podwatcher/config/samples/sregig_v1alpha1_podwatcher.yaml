@@ -9,4 +9,4 @@ metadata:
     app.kubernetes.io/created-by: podwatcher
   name: podwatcher-sample
 spec:
-    size: 2
+    size: 8

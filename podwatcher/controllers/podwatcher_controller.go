@@ -162,9 +162,9 @@ func (r *PodwatcherReconciler) deploymentForPodWatcher(m *sregigv1alpha1.Podwatc
 				},
 				Spec: corev1.PodSpec{
 					Containers: []corev1.Container{{
-						Image:   "podwatcher:latest",
+						Image:   "alpine:latest",
 						Name:    "podwatcher",
-						Command: []string{"podwatcher", "-m=64", "-o", "modern", "-v"},
+						Command: []string{"sh", "-c", "sleep 300d"},
 						Ports: []corev1.ContainerPort{{
 							ContainerPort: 11211,
 							Name:          "podwatcher",
