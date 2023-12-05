@@ -28,14 +28,15 @@ type PodwatcherSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	// Foo is an example field of Podwatcher. Edit podwatcher_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	//+kubebuilder:validation:minimum=0
+	Size int32 `json:"size"`
 }
 
 // PodwatcherStatus defines the observed state of Podwatcher
 type PodwatcherStatus struct {
 	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
+	Pods []string `json:"pods"`
 }
 
 //+kubebuilder:object:root=true

@@ -13,7 +13,7 @@ repo: github.com/tokalevasant/sre-gig-tasks/podwatcher
 resources:
 - api:
     crdVersion: v1
-    namespaced: true
+    namespaced: false
   controller: true
   domain: redhat.com
   group: sregig
